@@ -1,0 +1,14 @@
+TENANT OFFER FEATURE
+====================
+
+1. Back up your database.
+2. Open phpMyAdmin -> basha_bodol -> SQL.
+3. Run tenant_offer_migration.sql once.
+4. Restart the Node.js server.
+
+New moving bookings now require a tenant offer amount in BDT.
+Providers see the offer in their Mover dashboard and can Accept offer or Reject.
+Only an accepted offer can move through In Progress and Completed.
+Legacy bookings are kept compatible by the migration.
+
+The project backend in this ZIP is Node.js/Express (not PHP).
